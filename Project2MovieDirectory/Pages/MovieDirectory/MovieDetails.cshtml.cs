@@ -8,7 +8,12 @@ namespace Project2MovieDirectory.Pages.MovieDirectory;
 public class MovieDetails : PageModel
 {
     public Movie? Movie { get; set; }
-    private readonly IMovieService _movieService;
+    private readonly IMovieService _movieService; 
+    
+    public MovieDetails(IMovieService movieService)
+    {
+        _movieService = movieService;
+    }
 
     public void OnGet(int? id)
     {
