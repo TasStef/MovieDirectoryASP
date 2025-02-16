@@ -1,6 +1,8 @@
-﻿namespace Project2MovieDirectory.Pages.MovieDirectory.Models;
+﻿using Project2MovieDirectory.Pages.MovieDirectory.Interface;
 
-public class MovieList
+namespace Project2MovieDirectory.Pages.MovieDirectory.Models;
+
+public class StaticMovieService : IMovieService 
 {
      private static List<Movie> Movies = new List<Movie>
     {
@@ -43,18 +45,18 @@ public class MovieList
         },
         new Movie
         {
-            Id = 7, Title = "Schindler's List", Genre = "Biography", Rating = 8.9m, Year = 1993,
+            Id = 7, Title = "Schindler's Index", Genre = "Biography", Rating = 8.9m, Year = 1993,
             Description =
                 "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis."
         },
     };
 
-    public static List<Movie> GetAllMovies()
+    public List<Movie> GetAllMovies()
     {
         return Movies;
     }
      
-     public static Movie? GetMovieById(int id)
+     public Movie? GetMovieById(int id)
      {
          return Movies.FirstOrDefault(x => x.Id == id);
      }
