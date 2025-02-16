@@ -9,8 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17ecd519-e5f0-4aba-b75e-adddc4638ddc" name="Changes" comment="Reformating to follow ASP.net guidelines">
+    <list default="true" id="17ecd519-e5f0-4aba-b75e-adddc4638ddc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project2MovieDirectory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project2MovieDirectory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Interface/IMovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Interface/IMovieService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Models/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Models/Movie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Pages/MovieDirectory/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Pages/MovieDirectory/Index.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Pages/MovieDirectory/MovieDetails.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Pages/MovieDirectory/MovieDetails.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Services/StaticMovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Services/StaticMovieService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2MovieDirectory/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project2MovieDirectory/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +47,14 @@
     &quot;accountId&quot;: &quot;e6934bc2-ea5b-4060-8d3f-3f58ae47fa58&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Project2MovieDirectory/Pages/MovieDirectory/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project2MovieDirectory/Pages/MovieDirectory/MovieDetails.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -58,7 +72,7 @@
     ".NET Launch Settings Profile.Project2MovieDirectory: IIS Express.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dotnet-watch.Watch.executor": "Run",
-    "git-widget-placeholder": "tasks/Task5-Reformating",
+    "git-widget-placeholder": "tasks/adding-form",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -225,6 +239,6 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Includes tasks:&#10;- 2&#10;- 3&#10;- 4&#10;- 5" />
     <MESSAGE value="Reformating to follow ASP.net guidelines" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformating to follow ASP.net guidelines" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

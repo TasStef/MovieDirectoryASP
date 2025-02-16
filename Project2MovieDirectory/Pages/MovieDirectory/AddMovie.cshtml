@@ -1,0 +1,34 @@
+@page
+@model Project2MovieDirectory.Pages.MovieDirectory.AddMovie
+
+
+<div class="text-center">
+    
+    <h1>Add Movie</h1>
+    <form method="post">
+        <div style="display: flex; justify-content: center">
+            <div style="display: grid; grid-gap: 5px; width: 300px">
+                <input asp-for="Movie.Title" type="text" placeholder="Title"/>
+                <span asp-validation-for="Movie.Title"></span>
+                
+                <input asp-for="Movie.Genre" type="text" placeholder="Genre"/>
+                <span asp-validation-for="Movie.Genre"></span>
+                
+                <input asp-for="Movie.Rating" type="text" placeholder="Rating"/>
+                <span asp-validation-for="Movie.Rating"></span>
+                
+                <input asp-for="Movie.Year" type="text" placeholder="Year"/>
+                <span asp-validation-for="Movie.Year"></span>
+                
+                <input asp-for="Movie.Description" type="text" placeholder="Description"/>
+                <span asp-validation-for="Movie.Description"></span>
+                
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

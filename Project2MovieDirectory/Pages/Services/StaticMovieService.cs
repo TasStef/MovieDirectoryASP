@@ -1,6 +1,7 @@
-﻿using Project2MovieDirectory.Pages.MovieDirectory.Interface;
+﻿using Project2MovieDirectory.Pages.Interface;
+using Project2MovieDirectory.Pages.MovieDirectory.Models;
 
-namespace Project2MovieDirectory.Pages.MovieDirectory.Models;
+namespace Project2MovieDirectory.Pages.Services;
 
 public class StaticMovieService : IMovieService 
 {
@@ -59,5 +60,10 @@ public class StaticMovieService : IMovieService
      public Movie? GetMovieById(int id)
      {
          return Movies.FirstOrDefault(x => x.Id == id);
+     }
+     
+     public void AppendMovie(Movie movie)
+     {
+         Movies.Add(movie);
      }
 }

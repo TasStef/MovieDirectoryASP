@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Project2MovieDirectory.Pages.Interface;
 using Project2MovieDirectory.Pages.MovieDirectory.Interface;
 using Project2MovieDirectory.Pages.MovieDirectory.Models;
-
 
 namespace Project2MovieDirectory.Pages.MovieDirectory;
 
