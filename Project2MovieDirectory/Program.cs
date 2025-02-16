@@ -1,7 +1,12 @@
+using Project2MovieDirectory.Pages.MovieDirectory.Interface;
+using Project2MovieDirectory.Pages.MovieDirectory.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+    .Services.AddSingleton<IMovieService, StaticMovieService>();
+
 
 var app = builder.Build();
 

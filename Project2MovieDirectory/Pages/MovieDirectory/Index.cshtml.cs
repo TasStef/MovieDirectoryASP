@@ -1,17 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Project2MovieDirectory.Pages.MovieDirectory.Interface;
 using Project2MovieDirectory.Pages.MovieDirectory.Models;
-using static Project2MovieDirectory.Pages.MovieDirectory.Models.StaticMovieService;
+
 
 namespace Project2MovieDirectory.Pages.MovieDirectory;
 
-public class MovieDetails : PageModel
+public class Index : PageModel
 {
-    public Movie? Movie { get; set; }
     private readonly IMovieService _movieService;
 
-    public void OnGet(int? id)
+    public Index(IMovieService movieService)
     {
-        Movie = id.HasValue ? _movieService.GetMovieById(id.Value) : null;
+        _movieService = movieService;
+    }
+
+    public List<Movie>? Movies { get; set; }
+
+    public void OnGet()
+    {
+        Movies = _movieService.GetAllMovies();
     }
 }
