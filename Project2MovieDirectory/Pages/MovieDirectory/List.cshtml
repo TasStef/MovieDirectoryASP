@@ -1,0 +1,16 @@
+﻿@page
+@model List
+
+@foreach (var movie in Model.Movies)
+{
+    <div class="card">
+        <div class="card-body">
+            <a asp-page="/MovieDirectory/MovieDetails" asp-route-id ="@movie.Id">
+                <h5 class="card-title">@movie.Title</h5>
+            </a>
+            <p class="card-text">@movie.Genre</p>
+            <p class="card-text">@movie.Rating</p>
+            <p class="card-text">@movie.Year</p>
+        </div>
+    </div>
+}

@@ -1,0 +1,16 @@
+﻿@page "{id:int?}"
+@model Project2MovieDirectory.Pages.MovieDirectory.MovieDetails
+
+@if (Model.Movie==null)
+{
+    <p>Movie not found</p>
+    <a asp-page="List">Back to List</a>
+}
+else
+{
+    <div>
+        <h1> @Model.Movie.Title</h1>
+        <p> @Model.Movie.Description</p>
+        <a asp-page="List">Back to List</a>
+    </div>
+}
